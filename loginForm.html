@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="loginform.css">
 </head>
 
 <body>
-    <div>
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
+    <div class="login-container">
+        <header>login</header>
+        <div>
+            <input type="text" name="E-mail" placeholder="email">
+            <label>email</label>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="password">
+            <label>password</label>
+
+        </div>
+        <div class="">
+            <input type="checkbox" name="remember me">
+            <label>Remember me</label>
+            <label>forgot password</label>
+        </div>
+        <button>login</button>
+        <label>Don't have an account? Register</label>
     </div>
     <script>
         document.title = "LOGIN FORM";
