@@ -10,24 +10,28 @@
 
 <body>
     <div class="login-container">
-        <header>login</header>
-        <div class="email-container">
-            <input type="text" name="E-mail" placeholder="email">
-            <label>email</label>
-            <img src="icon1.png" alt="E-mail shower">
-        </div>
-        <div class="password-container">
-            <input type="password" name="password" placeholder="password">
-            <label>password</label>
-            <img src="icon1.png" alt="password shower">
-        </div>
-        <div class="rememberPassword-container">
-            <input type="checkbox" name="remember me">
-            <label>Remember me</label>
-            <label>forgot password</label>
-        </div>
-        <button>login</button>
-        <label>Don't have an account? Register</label>
+        <form action="">
+            <header>login</header>
+            <div class="email-container">
+                <input type="text" name="E-mail" placeholder="email">
+                <label class="input-label">email</label>
+                <img src="icon1.png" alt="E-mail shower">
+            </div>
+            <div class="password-container">
+                <input type="password" name="password" placeholder="password">
+                <label class="input-label">password</label>
+                <img src="icon1.png" alt="password shower">
+            </div>
+            <div class="rememberPassword-container">
+                <label>
+                    <input type="checkbox" name="remember me">
+                    <label>Remember me</label>
+                </label>
+                <label>forgot password</label>
+            </div>
+            <button>login</button>
+            <p class="register-el">Don't have an account? <a href="#">register</a></p>
+        </form>
     </div>
     <script>
         document.title = "LOGIN FORM";
