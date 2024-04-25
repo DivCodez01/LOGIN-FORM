@@ -13,12 +13,12 @@
         <form action="">
             <header>login</header>
             <div class="email-container">
-                <input type="text" name="E-mail" placeholder="email">
+                <input type="text" name="E-mail" placeholder="email" id="email-el">
                 <label class="input-label">email</label>
                 <img src="icon1.png" alt="E-mail shower">
             </div>
             <div class="password-container">
-                <input type="password" name="password" placeholder="password">
+                <input type="password" name="password" placeholder="password" id="password-el">
                 <label class="input-label">password</label>
                 <img src="icon1.png" alt="password shower">
             </div>
@@ -29,12 +29,28 @@
                 </label>
                 <label>forgot password</label>
             </div>
-            <button>login</button>
+            <button id="sendLogin">login</button>
             <p class="register-el">Don't have an account? <a href="#">register</a></p>
         </form>
     </div>
     <script>
-        document.title = "LOGIN FORM";
+        document.title = "MY LOGIN FORM";
+        const emailEl = document.getElementById("email-el");
+        const passwordEl = document.getElementById("password-el");
+        const sendLogin = document.getElementById("sendLogin");
+        sendLogin.addEventListener("click", function () {
+            let myEmail = "gakizadivin1@gmail.com";
+            let choosenPassword = "12345678";
+            if (emailEl.value == myEmail && passwordEl.value == choosenPassword) {
+                window.alert("Welcome!");
+            } else if (emailEl.value == myEmail && passwordEl.value != choosenPassword) {
+                window.alert("Wrong password!\n\nTry again");
+            } else if (emailEl.value != myEmail && passwordEl.value == choosenPassword) {
+                window.alert("Wrong Email!\n\ncheck your Email well and try again!");
+            } else {
+                window.alert("Wrong email and password!\n\nType again your user email and password!");
+            }
+        })
     </script>
 </body>
 
