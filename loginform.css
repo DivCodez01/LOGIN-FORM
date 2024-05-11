@@ -29,6 +29,16 @@ body {
     position: relative;
 }
 
+.login-container::before {
+    content: "";
+    position: absolute;
+    width: 410px;
+    height: 480px;
+    background: red;
+    top: -240px;
+    left: -205px;
+}
+
 form {
     width: 400px;
     height: 450px;
