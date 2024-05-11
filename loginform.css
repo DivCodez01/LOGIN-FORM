@@ -40,7 +40,7 @@ body {
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     top: -228px;
     left: -203px;
-    /* animation: rotate 3s linear infinite; */
+    animation: rotate 3s linear infinite;
     transform-origin: bottom right;
     border-radius: 16px;
 }
@@ -53,7 +53,7 @@ body {
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     bottom: -228px;
     right: -203px;
-    /* animation: rotate 3s linear infinite; */
+    animation: rotate 3s linear infinite;
     transform-origin: top left;
     border-radius: 16px;
 }
@@ -61,9 +61,9 @@ body {
 .snake {
     width: 406px;
     height: 456px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     border-radius: 16px;
 }
@@ -80,6 +80,8 @@ body {
     left: -203px;
     border-radius: 16px;
     background: linear-gradient(0deg, transparent, transparent, white, white, white);
+    animation: rotate 3s linear infinite;
+    transform-origin: top right;
 }
 
 .snake::after {
@@ -94,6 +96,8 @@ body {
     right: -203px;
     border-radius: 16px;
     background: linear-gradient(0deg, transparent, transparent, white, white, white);
+    animation: rotate 3s linear infinite;
+    transform-origin: bottom left;
 }
 
 form {
