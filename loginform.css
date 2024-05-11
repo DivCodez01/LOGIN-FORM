@@ -21,9 +21,9 @@ body {
 }
 
 .login-container {
-    overflow: hidden;
-    width: 420px;
-    height: 470px;
+    /* overflow: hidden; */
+    width: 406px;
+    height: 456px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,13 +35,65 @@ body {
 .login-container::before {
     content: "";
     position: absolute;
-    width: 420px;
-    height: 470px;
+    width: 406px;
+    height: 456px;
     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
-    top: -235px;
-    left: -210px;
-    animation: rotate 3s linear infinite;
+    top: -228px;
+    left: -203px;
+    /* animation: rotate 3s linear infinite; */
     transform-origin: bottom right;
+    border-radius: 16px;
+}
+
+.login-container::after {
+    content: "";
+    position: absolute;
+    width: 406px;
+    height: 456px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    bottom: -228px;
+    right: -203px;
+    /* animation: rotate 3s linear infinite; */
+    transform-origin: top left;
+    border-radius: 16px;
+}
+
+.snake {
+    width: 406px;
+    height: 456px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    border-radius: 16px;
+}
+
+.snake::before {
+    content: "";
+    width: 406px;
+    height: 456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -228px;
+    left: -203px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, transparent, transparent, white, white, white);
+}
+
+.snake::after {
+    content: "";
+    width: 406px;
+    height: 456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -228px;
+    right: -203px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, transparent, transparent, white, white, white);
 }
 
 form {
@@ -53,7 +105,7 @@ form {
     border-radius: 16px;
     /* background-color: transparent; */
     /* background-color: green; */
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 header {
