@@ -21,24 +21,25 @@ body {
 }
 
 .login-container {
-    /* overflow: hidden; */
-    width: 410px;
-    height: 480px;
+    overflow: hidden;
+    width: 420px;
+    height: 470px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: red;
+    border-radius: 16px;
 }
 
 .login-container::before {
     content: "";
     position: absolute;
-    width: 410px;
-    height: 480px;
-    background: red;
-    top: -240px;
-    left: -205px;
-    box-shadow: 5px 5px 15px 15px red;
+    width: 420px;
+    height: 470px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    top: -235px;
+    left: -210px;
     animation: rotate 3s linear infinite;
     transform-origin: bottom right;
 }
@@ -52,6 +53,7 @@ form {
     border-radius: 16px;
     /* background-color: transparent; */
     /* background-color: green; */
+    z-index: 1;
 }
 
 header {
