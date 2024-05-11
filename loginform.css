@@ -17,10 +17,11 @@ body {
     animation: animateBck 3s linear infinite;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    backdrop-filter: blur(5px);
 }
 
 .login-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 410px;
     height: 480px;
     display: flex;
@@ -37,6 +38,9 @@ body {
     background: red;
     top: -240px;
     left: -205px;
+    box-shadow: 5px 5px 15px 15px red;
+    animation: rotate 3s linear infinite;
+    transform-origin: bottom right;
 }
 
 form {
@@ -46,8 +50,7 @@ form {
     background-color: black;
     padding: 30px;
     border-radius: 16px;
-    background-color: transparent;
-    backdrop-filter: blur(20px);
+    /* background-color: transparent; */
     /* background-color: green; */
 }
 
@@ -191,4 +194,10 @@ a:active {
     justify-content: center;
     align-items: center;
     /* overflow: hidden; */
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
 }
